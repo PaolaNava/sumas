@@ -1,11 +1,13 @@
 const express = require ('express');
 const app = express();
+const cors =require('cors');
 
 
 // configuracion icial del servidor  en el puerto
 
 app.set('port', process.env.PORT || 4000);
 app.set('json spaces', 2)
+app.use(cors());
 
 
 
